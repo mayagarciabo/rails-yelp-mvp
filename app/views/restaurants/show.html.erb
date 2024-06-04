@@ -1,9 +1,7 @@
 <div class='container mt-4'>
-  <%= render 'restaurant', restaurant: @restaurant %>
+  <%= render('restaurant', restaurant: @restaurant) %>
+  <%= render('reviews/form', restaurant: @restaurant, review: @review) %>
 
-
-  <%= link_to 'go back', restaurants_path %>
-  <%= link_to 'see all reviews', restaurant_reviews_path(@restaurant.id) %>
-
+  <%= link_to('go back', restaurants_path) %>
 
 </div>
